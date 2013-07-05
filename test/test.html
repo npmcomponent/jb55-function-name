@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>isArray Tests</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      .fail {
+        color: red;
+      }
+      .pass {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="results"></ul>
+    <script src="../build/build.js"></script>
+    <script>
+      var fname = require('function-name');
+      var results = document.getElementById('results');
+      function assert(val, text) {
+        results.innerHTML += '<li class="' + (val === true?'pass':'fail') + '">' + (val === true?'PASS':'FAIL') + ': ' + text + '</li>';
+        if (val !== true) window.testsPassed = false;
+      }
+
+      var hi = fname(function hi(){});
+      var HI = fname(function HI(){});
+      var _  = fname(function(){});
+
+      assert(_ === '', "`function (){}` name is '" + _ + "'")
+      assert(hi === 'hi', "`function hi(){}` name is '" + hi + "'")
+      assert(HI === 'HI', "`function HI(){}` name is '" + HI + "'")
+
+      window.testsPassed = window.testsPassed != false;
+    </script>
+  </body>
+</html>
