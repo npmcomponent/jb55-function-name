@@ -19,3 +19,9 @@ fname(function (){}) === ''
 ## License
 
   MIT
+
+## Build status
+
+<a href="https://jepso-ci.com/jb55/function-name">
+  <img src="https://jepso-ci.com/jb55/function-name.svg" alt="jepso-ci status" />
+</a>
