@@ -3,7 +3,7 @@
   "repo": "jb55/function-name",
   "description": "Cross-browser function names",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["function", "name"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
