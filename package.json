@@ -1,0 +1,12 @@
+{
+  "name": "jb55-function-name",
+  "description": "Cross-browser function names",
+  "version": "0.0.1",
+  "keywords": [
+    "function",
+    "name"
+  ],
+  "main": "index.js",
+  "dependencies": {},
+  "license": "MIT"
+}
